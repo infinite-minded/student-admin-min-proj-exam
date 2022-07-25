@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<body>
+    <a href="/home/">Go back to home page</a>
+    <hr>
+    {% for student in students %}
+    <div>
+        <div>{{student.unique_id}}</div>
+        <div>{{student.name}}</div>
+        <div>{{student.total}}</div>
+    </div>
+    {% endfor %}
+</body>
+</html>
